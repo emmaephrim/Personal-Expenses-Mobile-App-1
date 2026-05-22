@@ -15,7 +15,7 @@ class _NewTransactionsState extends State<NewTransactions> {
   DateTime? _selectedDate;
 
   void _submitData() {
-    if (_amountController.text.isEmpty) {
+    if (_amountController.text.isEmpty || _amountController.text.isEmpty) {
       return;
     }
 
@@ -56,9 +56,10 @@ class _NewTransactionsState extends State<NewTransactions> {
           left: 10,
           right: 10,
           top: 10,
-          bottom: MediaQuery.of(context).viewInsets.bottom + 10,
+          bottom: MediaQuery.of(context).viewInsets.bottom,
         ),
         child: SingleChildScrollView(
+          reverse: true,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
@@ -81,9 +82,13 @@ class _NewTransactionsState extends State<NewTransactions> {
                   children: <Widget>[
                     Text(
                         _selectedDate == null
-                            ? "No Take Chosen!"
+                            ? "No Date Chosen!"
                             : "Picked Date: ${DateFormat.yMMMEd().format(_selectedDate!)}",
-                        style: TextStyle(fontWeight: FontWeight.w600)),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: _selectedDate == null
+                                ? Colors.red
+                                : Colors.grey)),
                     TextButton(
                       onPressed: _presentDataPicker,
                       child: Text("Choose Date",
