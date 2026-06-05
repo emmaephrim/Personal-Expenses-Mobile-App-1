@@ -2,11 +2,11 @@
 
 A clean, intuitive, and responsive personal finance tracking application built using Flutter. This project allows users to log their daily transactions, visualize their weekly spending habits through a dynamic bar chart, and manage their expenses on the go.
 
-Originally developed as part of a foundational Flutter development course, I have refactored, modernized, and polished the application—including layout optimizations, updated state management handling, and interactive modal sheets—to turn it into a production-ready portfolio piece.
+Originally developed as part of a foundational Flutter development course, I have refactored, modernized, and polished the application, including layout optimizations, updated state management handling, and interactive modal sheets, to turn it into a production-ready portfolio piece.
 
 ---
 
-## 📱 Key Features
+## Key Features
 
 - **Dynamic Weekly Spending Chart:** A visual bar chart at the top dynamically calculates and renders the percentage of total weekly spending allocated to each individual day.
 - **Transaction Management:** Add transactions seamlessly with a clear title, amount, and specific date selection. Delete unnecessary entries instantly with a clean swipe or tap.
@@ -16,37 +16,34 @@ Originally developed as part of a foundational Flutter development course, I hav
 
 ---
 
-## 📸 Screenshots & Application Flow
-
-> **Tip for Portfolio:** Create a folder in your project called `screenshots/`, rename your images to match the filenames below, and drop them in there so they display perfectly on GitHub!
+## Screenshots & Application Flow
 
 ### 1. Empty Dashboard State
 
 When no expenses have been recorded for the current tracking period, the app provides a clean fallback interface encouraging the user to log their first expense.
 
-![Empty Dashboard State](screenshots/empty_state.png)
+<img src="assets/images/screenshots/Screenshot_1780676723.png" alt="Empty Dashboard State" width="320" />
 
 ### 2. Live Expense Tracking & Analytics
 
 Once expenses are populated, the weekly overview updates dynamically. The bars represent proportional daily expenses against the weekly cap.
 
-![Active Dashboard](screenshots/active_state.png)
+<img src="assets/images/screenshots/Screenshot_1780676697.png" alt="Live Expense Tracking & Analytics" width="320" />
 
 ### 3. Adding New Transactions
 
 Clicking the floating action button (`+`) invokes an elegant modal sheet where users input details.
-
-![Add Transaction Modal](screenshots/add_transaction.png)
+<img src="assets/images/screenshots/Screenshot_1780676694.png" alt="Adding New Transactions" width="320" />
 
 ### 4. Interactive Date Selection
 
 Ensures seamless localized calendar pickers to historical or forward-plan transactions accurately.
 
-![Date Picker Component](screenshots/date_picker.png)
+<img src="assets/images/screenshots/Screenshot_1780676687.png" alt="Date Picker Component" width="320" />
 
 ---
 
-## 🛠️ Tech Stack & Engineering Concepts Mastered
+## Tech Stack & Engineering Concepts Mastered
 
 - **Framework:** Flutter (Dart)
 - **UI Architecture:** Custom Stateful and Stateless widgets, leveraging material design patterns (`ModalBottomSheet`, `FloatingActionButton`, customized `Card` themes).
@@ -55,7 +52,7 @@ Ensures seamless localized calendar pickers to historical or forward-plan transa
 
 ---
 
-## 🚀 Enhancements & Custom Implementations
+## Enhancements & Custom Implementations
 
 To differentiate this project from the base tutorial architecture, I introduced several critical enhancements:
 
@@ -65,18 +62,12 @@ To differentiate this project from the base tutorial architecture, I introduced 
 
 ---
 
-## 🏃 Getting Started
-
-### Prerequisites
-
-Make sure you have the Flutter SDK configured on your development system.
-
-- Flutter SDK >= 3.0.0
-- Dart SDK >= 3.0.0
-
-### Installation & Run
+## Getting Started
 
 1. Clone this repository to your local directory:
    ```bash
-   git clone [https://github.com/your-username/personal-expenses-flutter.git](https://githu
+   git clone https://github.com/emmaephrim/Personal-Expenses-Mobile-App-1.git
+   cd cd personal-expenses-flutter
+   flutter pub get
+   flutter run
    ```
