@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Expenses App',
       theme: ThemeData(
         fontFamily: "Quicksand",
@@ -97,6 +98,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
+        shape: CircleBorder(),
+        backgroundColor: Theme.of(context).primaryColorLight,
         onPressed: () => _startAddNewTransaction(context),
         child: Icon(Icons.add),
       ),
